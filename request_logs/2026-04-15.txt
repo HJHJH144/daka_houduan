@@ -1,0 +1,102 @@
+时间: 2026-04-15 08:10:53
+客户端IP: 144.48.80.232
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.23 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: 未知
+IP归属查询状态: failed
+IP归属查询失败原因: 归属地查询请求异常
+设备信息: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 SLBrowser/9.0.8.3131 SLBChan/133 SLBVPV/64-bit
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-15 08:10:54
+客户端IP: 144.48.80.232
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.28 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: Japan Tokyo Tokyo | Catixs LTD
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 SLBrowser/9.0.8.3131 SLBChan/133 SLBVPV/64-bit
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-15 08:11:09
+客户端IP: 144.48.80.232
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 128.88 ms
+学生学号: 24371408
+学生姓名: 曾骋
+平台用户ID: 未知
+IP归属地: Japan Tokyo Tokyo | Catixs LTD
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 SLBrowser/9.0.8.3131 SLBChan/133 SLBVPV/64-bit
+请求参数摘要: JSON参数: {"studentId":"24371408"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:183585，会话ID:CA5A36...468A，学号:24371408，账号:24371408，姓名:曾骋，昵称:曾骋，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学院:计算机学院，学院ID:434，班级:247124，班级ID:59171，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.20.11.197:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-15 08:11:19
+客户端IP: 144.48.80.232
+请求方法: GET
+请求路径: /api/schedule
+响应状态码: 200
+处理耗时: 175.15 ms
+学生学号: 24371408
+学生姓名: 曾骋
+平台用户ID: 183585
+IP归属地: Japan Tokyo Tokyo | Catixs LTD
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 SLBrowser/9.0.8.3131 SLBChan/133 SLBVPV/64-bit
+请求参数摘要: Query参数: {"userId":"183585","sessionId":"CA5A36FB063CFB90CF299C45D4C0468A","dateStr":"20260415"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-15 08:11:25
+客户端IP: 144.48.80.232
+请求方法: POST
+请求路径: /api/sign/single-day
+响应状态码: 200
+处理耗时: 1147.83 ms
+学生学号: 24371408
+学生姓名: 曾骋
+平台用户ID: 183585
+IP归属地: Japan Tokyo Tokyo | Catixs LTD
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 SLBrowser/9.0.8.3131 SLBChan/133 SLBVPV/64-bit
+请求参数摘要: JSON参数: {"userId":"183585","sessionId":"CA5A36FB063CFB90CF299C45D4C0468A","dateStr":"20260415","mode":"all","selectedCourseIds":["2396053"]}
+登录返回摘要: 无
+打卡课程摘要: 共1门: 20260415 操作系统(ID:2396053)
+------------------------------------------------------------------------
+时间: 2026-04-15 08:11:44
+客户端IP: 144.48.80.232
+请求方法: POST
+请求路径: /api/sign/range
+响应状态码: 200
+处理耗时: 2600.79 ms
+学生学号: 24371408
+学生姓名: 曾骋
+平台用户ID: 183585
+IP归属地: Japan Tokyo Tokyo | Catixs LTD
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 SLBrowser/9.0.8.3131 SLBChan/133 SLBVPV/64-bit
+请求参数摘要: JSON参数: {"userId":"183585","sessionId":"CA5A36FB063CFB90CF299C45D4C0468A","startDate":"20260415","endDate":"20260417"}
+登录返回摘要: 无
+打卡课程摘要: 共1门: 20260415 操作系统(ID:2396053)
+------------------------------------------------------------------------

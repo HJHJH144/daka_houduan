@@ -1,0 +1,85 @@
+时间: 2026-04-08 01:23:09
+客户端IP: 36.112.120.202
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.16 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Networks Inter Exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; V2307A Build/AP3A.240905.015.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.153 Mobile Safari/537.36 XWEB/1460043 MMWEBSDK/20260201 MMWEBID/966 REV/7546366db8ace19fe4a1c31e8c0bb02ae377d9e6 MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-08 01:23:17
+客户端IP: 36.112.120.202
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.29 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Networks Inter Exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; V2307A Build/AP3A.240905.015.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.153 Mobile Safari/537.36 XWEB/1460043 MMWEBSDK/20260201 MMWEBID/966 REV/7546366db8ace19fe4a1c31e8c0bb02ae377d9e6 MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-08 01:23:23
+客户端IP: 36.112.120.202
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 129.79 ms
+学生学号: 24371411
+学生姓名: 龙毓凡
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Networks Inter Exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; V2307A Build/AP3A.240905.015.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.153 Mobile Safari/537.36 XWEB/1460043 MMWEBSDK/20260201 MMWEBID/966 REV/7546366db8ace19fe4a1c31e8c0bb02ae377d9e6 MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"studentId":"24371411"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:183588，会话ID:23D455...468A，学号:24371411，账号:24371411，姓名:龙毓凡，昵称:龙毓凡，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学院:计算机学院，学院ID:434，班级:247124，班级ID:59171，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-08 01:23:31
+客户端IP: 36.112.120.202
+请求方法: GET
+请求路径: /api/schedule
+响应状态码: 200
+处理耗时: 261.77 ms
+学生学号: 24371411
+学生姓名: 龙毓凡
+平台用户ID: 183588
+IP归属地: China Beijing Beijing | China Networks Inter Exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; V2307A Build/AP3A.240905.015.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.153 Mobile Safari/537.36 XWEB/1460043 MMWEBSDK/20260201 MMWEBID/966 REV/7546366db8ace19fe4a1c31e8c0bb02ae377d9e6 MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: Query参数: {"userId":"183588","sessionId":"23D455B1173A13EACF299C45D4C0468A","dateStr":"20260408"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-08 01:23:38
+客户端IP: 36.112.120.202
+请求方法: POST
+请求路径: /api/sign/single-day
+响应状态码: 200
+处理耗时: 1291.48 ms
+学生学号: 24371411
+学生姓名: 龙毓凡
+平台用户ID: 183588
+IP归属地: China Beijing Beijing | China Networks Inter Exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; V2307A Build/AP3A.240905.015.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.153 Mobile Safari/537.36 XWEB/1460043 MMWEBSDK/20260201 MMWEBID/966 REV/7546366db8ace19fe4a1c31e8c0bb02ae377d9e6 MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"userId":"183588","sessionId":"23D455B1173A13EACF299C45D4C0468A","dateStr":"20260408","mode":"selected","selectedCourseIds":["2390954"]}
+登录返回摘要: 无
+打卡课程摘要: 共1门: 20260408 操作系统(ID:2390954)
+------------------------------------------------------------------------

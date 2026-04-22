@@ -3,6 +3,30 @@
   padding: 32px;
 }
 
+.gate-shell {
+  display: grid;
+  place-items: center;
+}
+
+.gate-card {
+  width: min(560px, 100%);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 14px 30px rgba(11, 97, 183, 0.1);
+}
+
+.gate-card h1 {
+  margin: 10px 0;
+}
+
+.cooldown-text {
+  margin: 6px 0;
+  color: #b02a37;
+  font-weight: 600;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -61,6 +85,20 @@
   margin-top: 6px;
   font-size: 13px;
   color: var(--ink-soft);
+}
+
+.clock-label {
+  margin-top: 12px;
+}
+
+.clock-value {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(11, 97, 183, 0.35);
+  background: linear-gradient(180deg, rgba(28, 126, 214, 0.16) 0%, rgba(11, 97, 183, 0.08) 100%);
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .layout {
@@ -153,6 +191,39 @@ button:disabled {
 .mode-body {
   display: grid;
   gap: 12px;
+}
+
+.continuous-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.field-group {
+  display: grid;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.field-label {
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.field-help {
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.mode-note {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 13px;
 }
 
 .check-row label {
@@ -255,6 +326,10 @@ button:disabled {
 
   .logs-panel {
     grid-column: span 1;
+  }
+
+  .continuous-grid {
+    grid-template-columns: 1fr;
   }
 
   .course-item {

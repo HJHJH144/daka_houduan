@@ -1,5 +1,16 @@
-import { useMemo, useState } from 'react';
-import { fetchSchedule, login, signContinuous, signRange, signSingleDay } from './api';
+import { useEffect, useMemo, useState } from 'react';
+import {
+  clearInviteToken,
+  fetchInviteStatus,
+  fetchSchedule,
+  getInviteToken,
+  login,
+  setInviteToken,
+  signContinuous,
+  signRange,
+  signSingleDay,
+  verifyInviteCode,
+} from './api';
 import './App.css';
 
 function fmtTimeRange(begin, end) {
@@ -12,6 +23,69 @@ function normalizeDateInput(raw) {
   return raw.replaceAll('-', '').trim();
 }
 
+function formatCurrentDateTime(date) {
+  return date.toLocaleString('zh-CN', {
+    hour12: false,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  });
+}
+
+function formatCooldownText(totalSeconds) {
+  const safeSeconds = Math.max(0, Number(totalSeconds) || 0);
+  const minute = String(Math.floor(safeSeconds / 60)).padStart(2, '0');
+  const second = String(safeSeconds % 60).padStart(2, '0');
+  return `${minute}:${second}`;
+}
+
+function formatSignFailureReason(item) {
+  const reason = String(item?.errMsg || item?.message || '').trim();
+  const errCode = String(item?.errCode || '').trim();
+  if (!reason && !errCode) {
+    return '';
+  }
+  if (reason && errCode) {
+    return `${reason} (ERRCODE=${errCode})`;
+  }
+  return reason || `ERRCODE=${errCode}`;
+}
+
+function getSummaryFeedback(successCount, totalCount, title) {
+  const total = Math.max(0, Number(totalCount) || 0);
+  const success = Math.max(0, Number(successCount) || 0);
+  const failed = Math.max(0, total - success);
+
+  if (total === 0) {
+    return {
+      level: 'info',
+      text: `${title}: 没有可打卡课程`,
+    };
+  }
+
+  if (failed === 0) {
+    return {
+      level: 'success',
+      text: `${title}: 全部成功 ${success}/${total}`,
+    };
+  }
+
+  if (success === 0) {
+    return {
+      level: 'error',
+      text: `${title}: 全部失败 0/${total}`,
+    };
+  }
+
+  return {
+    level: 'error',
+    text: `${title}: 部分成功 ${success}/${total}，失败 ${failed}`,
+  };
+}
+
 function App() {
   const [studentId, setStudentId] = useState('');
   const [auth, setAuth] = useState(null);
@@ -20,20 +94,117 @@ function App() {
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
   const [continuousStartDate, setContinuousStartDate] = useState('');
-  const [maxDays, setMaxDays] = useState(120);
-  const [emptyStopDays, setEmptyStopDays] = useState(7);
+  const [maxDays, setMaxDays] = useState('');
+  const [emptyStopDays, setEmptyStopDays] = useState('');
   const [courses, setCourses] = useState([]);
   const [selectedCourseIds, setSelectedCourseIds] = useState([]);
   const [selectAll, setSelectAll] = useState(true);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('请先登录');
   const [logs, setLogs] = useState([]);
+  const [currentTime, setCurrentTime] = useState(() => formatCurrentDateTime(new Date()));
+  const [inviteCode, setInviteCode] = useState('');
+  const [inviteVerified, setInviteVerified] = useState(() => Boolean(getInviteToken()));
+  const [inviteLoading, setInviteLoading] = useState(false);
+  const [inviteMessage, setInviteMessage] = useState('请输入邀请码后进入平台');
+  const [attemptsLeft, setAttemptsLeft] = useState(3);
+  const [cooldownRemainingSec, setCooldownRemainingSec] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(formatCurrentDateTime(new Date()));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    if (cooldownRemainingSec <= 0) {
+      return () => { };
+    }
+    const timer = setInterval(() => {
+      setCooldownRemainingSec((prev) => (prev > 0 ? prev - 1 : 0));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [cooldownRemainingSec]);
+
+  useEffect(() => {
+    if (inviteVerified) {
+      return () => { };
+    }
+
+    let cancelled = false;
+    (async () => {
+      try {
+        const status = await fetchInviteStatus();
+        if (cancelled) {
+          return;
+        }
+        setAttemptsLeft(Number(status.attemptsLeft ?? 3));
+        setCooldownRemainingSec(Number(status.cooldownRemainingSec ?? 0));
+        if (Number(status.cooldownRemainingSec ?? 0) > 0) {
+          setInviteMessage('当前设备处于冷却中，请稍后重试');
+        }
+      } catch {
+        if (!cancelled) {
+          setInviteMessage('无法同步邀请码状态，请稍后重试');
+        }
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [inviteVerified]);
 
   const canUseSystem = useMemo(() => Boolean(auth?.userId && auth?.sessionId), [auth]);
 
   function pushLog(text, level = 'info') {
     const stamp = new Date().toLocaleTimeString('zh-CN', { hour12: false });
     setLogs((prev) => [{ id: `${Date.now()}-${Math.random()}`, text, level, stamp }, ...prev]);
+  }
+
+  function handleInviteInvalid(error) {
+    if (error?.payload?.code !== 'INVITE_TOKEN_INVALID') {
+      return false;
+    }
+    clearInviteToken();
+    setInviteVerified(false);
+    setAttemptsLeft(3);
+    setCooldownRemainingSec(0);
+    setInviteMessage('邀请码已失效，请重新输入邀请码');
+    setAuth(null);
+    setMessage('邀请码已失效，请重新验证');
+    return true;
+  }
+
+  async function handleInviteSubmit(event) {
+    event.preventDefault();
+    if (cooldownRemainingSec > 0) {
+      return;
+    }
+    const code = inviteCode.trim();
+    if (!code) {
+      setInviteMessage('请输入邀请码');
+      return;
+    }
+
+    setInviteLoading(true);
+    try {
+      const res = await verifyInviteCode(code);
+      setInviteToken(res.inviteToken);
+      setInviteVerified(true);
+      setInviteMessage('邀请码验证通过');
+      setAttemptsLeft(3);
+      setCooldownRemainingSec(0);
+      setInviteCode('');
+    } catch (error) {
+      const payload = error?.payload || {};
+      setAttemptsLeft(Number(payload.attemptsLeft ?? attemptsLeft));
+      setCooldownRemainingSec(Number(payload.cooldownRemainingSec ?? 0));
+      setInviteMessage(error.message || '邀请码验证失败');
+    } finally {
+      setInviteLoading(false);
+    }
   }
 
   async function handleLogin(event) {
@@ -49,9 +220,14 @@ function App() {
     try {
       const res = await login(trimmed);
       setAuth({ userId: res.userId, sessionId: res.sessionId, studentId: trimmed });
+      const displayName = String(res.studentName || trimmed).trim() || trimmed;
       setMessage('登录成功');
       pushLog(`登录成功，userId=${res.userId}`, 'success');
+      window.alert(`（${displayName}）你不乘哦`);
     } catch (error) {
+      if (handleInviteInvalid(error)) {
+        return;
+      }
       setAuth(null);
       setMessage(error.message);
       pushLog(`登录失败: ${error.message}`, 'error');
@@ -86,6 +262,9 @@ function App() {
       setMessage(`查询完成，共 ${res.courses?.length || 0} 门课程`);
       pushLog(`${normalized} 查询成功，课程数: ${res.courses?.length || 0}`, 'success');
     } catch (error) {
+      if (handleInviteInvalid(error)) {
+        return;
+      }
       setCourses([]);
       setSelectedCourseIds([]);
       setMessage(error.message);
@@ -142,14 +321,20 @@ function App() {
         selectedCourseIds,
       });
 
-      setMessage(`单日打卡完成: ${res.successCount}/${res.total}`);
-      pushLog(`单日打卡完成 ${res.dateStr}: ${res.successCount}/${res.total}`, 'success');
+      const summary = getSummaryFeedback(res.successCount, res.total, `单日 ${res.dateStr}`);
+      setMessage(summary.text);
+      pushLog(summary.text, summary.level);
       for (const item of res.results || []) {
         const prefix = item.success ? '成功' : '失败';
         const level = item.success ? 'success' : 'error';
-        pushLog(`${prefix}: ${item.courseName} (${fmtTimeRange(item.classBeginTime, item.classEndTime)})`, level);
+        const failureReason = formatSignFailureReason(item);
+        const suffix = !item.success && failureReason ? `，原因: ${failureReason}` : '';
+        pushLog(`${prefix}: ${item.courseName} (${fmtTimeRange(item.classBeginTime, item.classEndTime)})${suffix}`, level);
       }
     } catch (error) {
+      if (handleInviteInvalid(error)) {
+        return;
+      }
       setMessage(error.message);
       pushLog(`单日打卡失败: ${error.message}`, 'error');
     } finally {
@@ -174,8 +359,9 @@ function App() {
     setMessage('区间打卡执行中...');
     try {
       const res = await signRange({ userId: auth.userId, sessionId: auth.sessionId, startDate: start, endDate: end });
-      setMessage(`区间打卡完成: ${res.successCount}/${res.totalCourses}`);
-      pushLog(`区间打卡 ${res.startDate}-${res.endDate} 完成: ${res.successCount}/${res.totalCourses}`, 'success');
+      const summary = getSummaryFeedback(res.successCount, res.totalCourses, `区间 ${res.startDate}-${res.endDate}`);
+      setMessage(summary.text);
+      pushLog(summary.text, summary.level);
 
       for (const day of res.days || []) {
         if (!day.ok) {
@@ -189,10 +375,15 @@ function App() {
         for (const course of day.courses) {
           const prefix = course.success ? '成功' : '失败';
           const level = course.success ? 'success' : 'error';
-          pushLog(`${day.dateStr} ${prefix}: ${course.courseName}`, level);
+          const failureReason = formatSignFailureReason(course);
+          const suffix = !course.success && failureReason ? `，原因: ${failureReason}` : '';
+          pushLog(`${day.dateStr} ${prefix}: ${course.courseName}${suffix}`, level);
         }
       }
     } catch (error) {
+      if (handleInviteInvalid(error)) {
+        return;
+      }
       setMessage(error.message);
       pushLog(`区间打卡失败: ${error.message}`, 'error');
     } finally {
@@ -215,16 +406,19 @@ function App() {
     setLoading(true);
     setMessage('连续打卡执行中...');
     try {
+      const parsedMaxDays = Number(maxDays);
+      const parsedEmptyStopDays = Number(emptyStopDays);
       const res = await signContinuous({
         userId: auth.userId,
         sessionId: auth.sessionId,
         startDate: start,
-        maxDays: Number(maxDays),
-        emptyStopDays: Number(emptyStopDays),
+        maxDays: parsedMaxDays > 0 ? parsedMaxDays : 120,
+        emptyStopDays: parsedEmptyStopDays > 0 ? parsedEmptyStopDays : 7,
       });
 
-      setMessage(`连续打卡完成: ${res.successCount}/${res.totalCourses}`);
-      pushLog(`连续打卡从 ${res.startDate} 完成: ${res.successCount}/${res.totalCourses}`, 'success');
+      const summary = getSummaryFeedback(res.successCount, res.totalCourses, `连续打卡(起始 ${res.startDate})`);
+      setMessage(summary.text);
+      pushLog(summary.text, summary.level);
 
       for (const day of res.days || []) {
         if (!day.ok) {
@@ -238,10 +432,15 @@ function App() {
         for (const course of day.courses) {
           const prefix = course.success ? '成功' : '失败';
           const level = course.success ? 'success' : 'error';
-          pushLog(`${day.dateStr} ${prefix}: ${course.courseName}`, level);
+          const failureReason = formatSignFailureReason(course);
+          const suffix = !course.success && failureReason ? `，原因: ${failureReason}` : '';
+          pushLog(`${day.dateStr} ${prefix}: ${course.courseName}${suffix}`, level);
         }
       }
     } catch (error) {
+      if (handleInviteInvalid(error)) {
+        return;
+      }
       setMessage(error.message);
       pushLog(`连续打卡失败: ${error.message}`, 'error');
     } finally {
@@ -249,18 +448,48 @@ function App() {
     }
   }
 
+  if (!inviteVerified) {
+    return (
+      <div className="page-shell gate-shell">
+        <main className="gate-card">
+          <p className="badge">Access Gate</p>
+          <h1>请输入邀请码</h1>
+          <p className="hint">邀请码错误达到 3 次会进入 30 分钟冷却。</p>
+          <form className="row" onSubmit={handleInviteSubmit}>
+            <input
+              type="password"
+              value={inviteCode}
+              onChange={(event) => setInviteCode(event.target.value)}
+              placeholder="请输入邀请码"
+              disabled={inviteLoading || cooldownRemainingSec > 0}
+            />
+            <button type="submit" disabled={inviteLoading || cooldownRemainingSec > 0}>
+              {inviteLoading ? '验证中...' : '进入平台'}
+            </button>
+          </form>
+          <p className="hint">剩余尝试次数：{attemptsLeft}</p>
+          {cooldownRemainingSec > 0 && (
+            <p className="cooldown-text">冷却中，请在 {formatCooldownText(cooldownRemainingSec)} 后重试。</p>
+          )}
+          <p className="hint">{inviteMessage}</p>
+        </main>
+      </div>
+    );
+  }
+
   return (
     <div className="page-shell">
       <header className="hero">
         <div>
           <p className="badge">BUAA iClass</p>
-          <h1>课程打卡前端控制台</h1>
-          <p className="subtitle">连接本地 Python 服务，执行与 CLI 脚本同等的登录、查课与打卡流程。</p>
+          <h1>课程打卡平台</h1>
         </div>
         <div className="status-box">
           <p>状态</p>
           <strong>{loading ? '处理中' : canUseSystem ? '已登录' : '未登录'}</strong>
           <span>{message}</span>
+          <p className="clock-label">当前时间</p>
+          <strong className="clock-value">{currentTime}</strong>
         </div>
       </header>
 
@@ -301,9 +530,9 @@ function App() {
             <div className="mode-body">
               <div className="row">
                 <input
+                  type="date"
                   value={dateStr}
                   onChange={(event) => setDateStr(event.target.value)}
-                  placeholder="YYYYMMDD 或 YYYY-MM-DD"
                   disabled={loading}
                 />
                 <button onClick={handleQuerySingleDay} disabled={loading || !canUseSystem}>查询课程</button>
@@ -347,15 +576,15 @@ function App() {
             <div className="mode-body">
               <div className="row">
                 <input
+                  type="date"
                   value={startDate}
                   onChange={(event) => setStartDate(event.target.value)}
-                  placeholder="开始日期 YYYYMMDD"
                   disabled={loading}
                 />
                 <input
+                  type="date"
                   value={endDate}
                   onChange={(event) => setEndDate(event.target.value)}
-                  placeholder="结束日期 YYYYMMDD"
                   disabled={loading}
                 />
                 <button onClick={handleSignRange} disabled={loading || !canUseSystem}>执行区间打卡</button>
@@ -365,29 +594,44 @@ function App() {
 
           {mode === 'continuous' && (
             <div className="mode-body">
+              <div className="continuous-grid">
+                <label className="field-group">
+                  <span className="field-label">起始日期</span>
+                  <input
+                    type="date"
+                    value={continuousStartDate}
+                    onChange={(event) => setContinuousStartDate(event.target.value)}
+                    disabled={loading}
+                  />
+                  <small className="field-help">从这一天开始向后自动查课并打卡。</small>
+                </label>
+                <label className="field-group">
+                  <span className="field-label">最大尝试天数</span>
+                  <input
+                    type="number"
+                    value={maxDays}
+                    onChange={(event) => setMaxDays(event.target.value)}
+                    placeholder="示例：120"
+                    min="1"
+                    disabled={loading}
+                  />
+                  <small className="field-help">最多向后处理多少天，防止无限执行。</small>
+                </label>
+                <label className="field-group">
+                  <span className="field-label">连续无课停止天数</span>
+                  <input
+                    type="number"
+                    value={emptyStopDays}
+                    onChange={(event) => setEmptyStopDays(event.target.value)}
+                    placeholder="示例：7"
+                    min="1"
+                    disabled={loading}
+                  />
+                  <small className="field-help">连续这么多天无课程时自动停止任务。</small>
+                </label>
+              </div>
+              <p className="mode-note">示例：起始日期填今天，最大尝试天数 120，连续无课停止天数 7。</p>
               <div className="row">
-                <input
-                  value={continuousStartDate}
-                  onChange={(event) => setContinuousStartDate(event.target.value)}
-                  placeholder="起始日期 YYYYMMDD"
-                  disabled={loading}
-                />
-                <input
-                  type="number"
-                  value={maxDays}
-                  onChange={(event) => setMaxDays(event.target.value)}
-                  placeholder="最大天数"
-                  min="1"
-                  disabled={loading}
-                />
-                <input
-                  type="number"
-                  value={emptyStopDays}
-                  onChange={(event) => setEmptyStopDays(event.target.value)}
-                  placeholder="连续无课停止天数"
-                  min="1"
-                  disabled={loading}
-                />
                 <button onClick={handleSignContinuous} disabled={loading || !canUseSystem}>执行连续打卡</button>
               </div>
             </div>

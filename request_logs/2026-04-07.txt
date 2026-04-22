@@ -1,0 +1,255 @@
+时间: 2026-04-07 01:46:29
+客户端IP: 240e:404:1a10:b081:28e7:75ff:fef8:522e
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.16 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | No. 1,jin rong Street
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; ALI-AN00 Build/HONORALI-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/9892 REV/68bf68261f74fa55a28cc826e238bf3336dfdd4b MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 01:46:33
+客户端IP: 240e:404:1a10:b081:28e7:75ff:fef8:522e
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.41 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | No. 1,jin rong Street
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; ALI-AN00 Build/HONORALI-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/9892 REV/68bf68261f74fa55a28cc826e238bf3336dfdd4b MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 01:46:38
+客户端IP: 240e:404:1a10:b081:28e7:75ff:fef8:522e
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 164.57 ms
+学生学号: 24371408
+学生姓名: 曾骋
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | No. 1,jin rong Street
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; ALI-AN00 Build/HONORALI-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/9892 REV/68bf68261f74fa55a28cc826e238bf3336dfdd4b MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"studentId":"24371408"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:183585，会话ID:CA5A36...468A，学号:24371408，账号:24371408，姓名:曾骋，昵称:曾骋，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学院:计算机学院，学院ID:434，班级:247124，班级ID:59171，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 01:46:59
+客户端IP: 240e:404:1a10:b081:28e7:75ff:fef8:522e
+请求方法: POST
+请求路径: /api/sign/range
+响应状态码: 200
+处理耗时: 5781.49 ms
+学生学号: 24371408
+学生姓名: 曾骋
+平台用户ID: 183585
+IP归属地: China Beijing Beijing | No. 1,jin rong Street
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; ALI-AN00 Build/HONORALI-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/9892 REV/68bf68261f74fa55a28cc826e238bf3336dfdd4b MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"userId":"183585","sessionId":"CA5A36FB063CFB90CF299C45D4C0468A","startDate":"20260407","endDate":"20260410"}
+登录返回摘要: 无
+打卡课程摘要: 共8门: 20260407 航空航天概论B(ID:2389892)；20260407 机器学习(ID:2440674)；20260408 操作系统(ID:2390978)；20260408 国家安全（4）(ID:2391392)；20260409 面向对象设计与构造(ID:2391600)；20260409 军事理论(ID:2392388)；20260410 马克思主义基本原理(ID:2392721)；20260410 面向对象设计与构造(ID:2393410)
+------------------------------------------------------------------------
+时间: 2026-04-07 10:00:00
+客户端IP: 36.112.120.56
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.50 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Networks Inter Exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 12; HBN-AL10 Build/HUAWEIHBN-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/5026 REV/7546366db8ace19fe4a1c31e8c0bb02ae377d9e6 MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 09:59:57
+客户端IP: 36.112.120.56
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.24 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Networks Inter Exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 12; HBN-AL10 Build/HUAWEIHBN-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/5026 REV/7546366db8ace19fe4a1c31e8c0bb02ae377d9e6 MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 10:00:08
+客户端IP: 36.112.120.56
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 585.08 ms
+学生学号: 24371403
+学生姓名: 贺严
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Networks Inter Exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 12; HBN-AL10 Build/HUAWEIHBN-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/5026 REV/7546366db8ace19fe4a1c31e8c0bb02ae377d9e6 MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"studentId":"24371403"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:183580，会话ID:32347B...468A，学号:24371403，账号:24371403，姓名:贺严，昵称:贺严，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学院:计算机学院，学院ID:434，班级:247124，班级ID:59171，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 10:00:39
+客户端IP: 36.112.120.56
+请求方法: POST
+请求路径: /api/sign/range
+响应状态码: 200
+处理耗时: 14312.56 ms
+学生学号: 24371403
+学生姓名: 贺严
+平台用户ID: 183580
+IP归属地: China Beijing Beijing | China Networks Inter Exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 12; HBN-AL10 Build/HUAWEIHBN-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/5026 REV/7546366db8ace19fe4a1c31e8c0bb02ae377d9e6 MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"userId":"183580","sessionId":"32347BD5352554C2CF299C45D4C0468A","startDate":"20260407","endDate":"20260420"}
+登录返回摘要: 无
+打卡课程摘要: 共15门: 20260407 航空航天概论B(ID:2390061)；20260407 机器学习(ID:2440674)；20260408 操作系统(ID:2390960)；20260408 离散数学（3）(ID:2391373)；20260409 面向对象设计与构造(ID:2391601)；20260409 宏观经济学(ID:2445458)；20260409 金融工程概论(ID:2445460)；20260409 军事理论(ID:2392388)；20260410 马克思主义基本原理(ID:2392722)；20260410 面向对象设计与构造(ID:2393411)；20260413 操作系统(ID:2394224)；20260413 离散数学（3）(ID:2394562)；20260414 航空航天概论B(ID:2395142)；20260414 机器学习(ID:2395527)；20260414 计量经济学(ID:2445475)
+------------------------------------------------------------------------
+时间: 2026-04-07 10:01:37
+客户端IP: 36.112.120.253
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.21 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Networks Inter Exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 14; 23127PN0CC Build/UKQ1.230804.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.153 Mobile Safari/537.36 XWEB/1460043 MMWEBSDK/20260201 MMWEBID/317 REV/7546366db8ace19fe4a1c31e8c0bb02ae377d9e6 MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 10:01:48
+客户端IP: 36.112.120.253
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.38 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Networks Inter Exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 14; 23127PN0CC Build/UKQ1.230804.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/146.0.7680.153 Mobile Safari/537.36 XWEB/1460043 MMWEBSDK/20260201 MMWEBID/317 REV/7546366db8ace19fe4a1c31e8c0bb02ae377d9e6 MicroMessenger/8.0.69.3040(0x2800455E) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 12:05:46
+客户端IP: 220.130.58.19
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.16 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: Taiwan Keelung City Taipei | Chunghwa Telecom Co., Ltd.
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 12:06:00
+客户端IP: 220.130.58.19
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.26 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: Taiwan Keelung City Taipei | Chunghwa Telecom Co., Ltd.
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 12:06:06
+客户端IP: 220.130.58.19
+请求方法: POST
+请求路径: /api/login
+响应状态码: 400
+处理耗时: 116.61 ms
+学生学号: 24
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: Taiwan Keelung City Taipei | Chunghwa Telecom Co., Ltd.
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+请求参数摘要: JSON参数: {"studentId":"24"}
+登录返回摘要: 登录状态:1
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 12:06:09
+客户端IP: 220.130.58.19
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 162.88 ms
+学生学号: 24371526
+学生姓名: 罗斐然
+平台用户ID: 未知
+IP归属地: Taiwan Keelung City Taipei | Chunghwa Telecom Co., Ltd.
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+请求参数摘要: JSON参数: {"studentId":"24371526"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:183114，会话ID:1079F9...468A，学号:24371526，账号:24371526，姓名:罗斐然，昵称:罗斐然，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学院:计算机学院，学院ID:434，班级:247128，班级ID:59175，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-04-07 12:06:30
+客户端IP: 220.130.58.19
+请求方法: POST
+请求路径: /api/sign/range
+响应状态码: 200
+处理耗时: 4906.40 ms
+学生学号: 24371526
+学生姓名: 罗斐然
+平台用户ID: 183114
+IP归属地: Taiwan Keelung City Taipei | Chunghwa Telecom Co., Ltd.
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+请求参数摘要: JSON参数: {"userId":"183114","sessionId":"1079F9A894C78764CF299C45D4C0468A","startDate":"20260407","endDate":"20260409"}
+登录返回摘要: 无
+打卡课程摘要: 共7门: 20260407 航空航天概论B(ID:2390060)；20260407 机器学习(ID:2440674)；20260408 操作系统(ID:2390980)；20260409 面向对象设计与构造(ID:2391600)；20260409 宏观经济学(ID:2445458)；20260409 金融工程概论(ID:2445460)；20260409 军事理论(ID:2392388)
+------------------------------------------------------------------------

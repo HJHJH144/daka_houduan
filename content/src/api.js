@@ -1,9 +1,27 @@
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:5000';
+const INVITE_TOKEN_KEY = 'inviteToken';
+
+export function getInviteToken() {
+    return window.sessionStorage.getItem(INVITE_TOKEN_KEY) || '';
+}
+
+export function setInviteToken(token) {
+    if (!token) {
+        return;
+    }
+    window.sessionStorage.setItem(INVITE_TOKEN_KEY, token);
+}
+
+export function clearInviteToken() {
+    window.sessionStorage.removeItem(INVITE_TOKEN_KEY);
+}
 
 async function request(path, options = {}) {
+    const inviteToken = getInviteToken();
     const response = await fetch(`${API_BASE_URL}${path}`, {
         headers: {
             'Content-Type': 'application/json',
+            ...(inviteToken ? { 'X-Invite-Token': inviteToken } : {}),
             ...(options.headers || {}),
         },
         ...options,
@@ -17,10 +35,27 @@ async function request(path, options = {}) {
     }
 
     if (!response.ok || payload.ok === false) {
-        throw new Error(payload.message || `请求失败: ${response.status}`);
+        if (payload.code === 'INVITE_TOKEN_INVALID') {
+            clearInviteToken();
+        }
+        const error = new Error(payload.message || `请求失败: ${response.status}`);
+        error.status = response.status;
+        error.payload = payload;
+        throw error;
     }
 
     return payload;
+}
+
+export function verifyInviteCode(inviteCode) {
+    return request('/api/invite/verify', {
+        method: 'POST',
+        body: JSON.stringify({ inviteCode }),
+    });
+}
+
+export function fetchInviteStatus() {
+    return request('/api/invite/status');
 }
 
 export function login(studentId) {

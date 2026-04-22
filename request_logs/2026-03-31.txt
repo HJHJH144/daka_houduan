@@ -1,0 +1,544 @@
+时间: 2026-03-31 13:39:16
+客户端IP: 240e:404:1a20:7f1d:188a:50ff:fe3c:ae27
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.16 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | No. 1,jin rong Street
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; ALI-AN00 Build/HONORALI-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/9892 REV/b86ea80a91ea3dbf4db14af2b60a8db9b3d65412 MicroMessenger/8.0.69.3040(0x2800455D) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 13:39:22
+客户端IP: 240e:404:1a20:7f1d:188a:50ff:fe3c:ae27
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.24 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | No. 1,jin rong Street
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; ALI-AN00 Build/HONORALI-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/9892 REV/b86ea80a91ea3dbf4db14af2b60a8db9b3d65412 MicroMessenger/8.0.69.3040(0x2800455D) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 13:39:52
+客户端IP: 2001:250:206:57f:19e1:f3c2:e99a:3254
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.14 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; V2307A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/28.5.3.3
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 13:39:54
+客户端IP: 2408:8409:1920:1b69:3c65:8d07:6aff:cdd7
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.16 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Unicom Beijing Province Network
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 12; HarmonyOS; HBN-AL10; HMSCore 6.15.4.342) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/17.0.3.301 Mobile Safari/537.36
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 13:39:56
+客户端IP: 2001:250:206:57f:19e1:f3c2:e99a:3254
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.26 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; V2307A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/28.5.3.3
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 13:39:59
+客户端IP: 2408:8409:1920:1b69:3c65:8d07:6aff:cdd7
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.30 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Unicom Beijing Province Network
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 12; HarmonyOS; HBN-AL10; HMSCore 6.15.4.342) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/17.0.3.301 Mobile Safari/537.36
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 13:40:07
+客户端IP: 2408:8409:1920:1b69:3c65:8d07:6aff:cdd7
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 173.65 ms
+学生学号: 24371403
+学生姓名: 贺严
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Unicom Beijing Province Network
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 12; HarmonyOS; HBN-AL10; HMSCore 6.15.4.342) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/17.0.3.301 Mobile Safari/537.36
+请求参数摘要: JSON参数: {"studentId":"24371403"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:183580，会话ID:32347B...468A，学号:24371403，账号:24371403，姓名:贺严，昵称:贺严，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学院:计算机学院，学院ID:434，班级:247124，班级ID:59171，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 13:40:19
+客户端IP: 2001:250:206:57f:19e1:f3c2:e99a:3254
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 131.77 ms
+学生学号: 24371411
+学生姓名: 龙毓凡
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; V2307A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/28.5.3.3
+请求参数摘要: JSON参数: {"studentId":"24371411"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:183588，会话ID:23D455...468A，学号:24371411，账号:24371411，姓名:龙毓凡，昵称:龙毓凡，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学院:计算机学院，学院ID:434，班级:247124，班级ID:59171，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 13:40:29
+客户端IP: 2001:250:206:57f:19e1:f3c2:e99a:3254
+请求方法: POST
+请求路径: /api/sign/range
+响应状态码: 200
+处理耗时: 5117.94 ms
+学生学号: 24371411
+学生姓名: 龙毓凡
+平台用户ID: 183588
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; V2307A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.6778.200 Mobile Safari/537.36 VivoBrowser/28.5.3.3
+请求参数摘要: JSON参数: {"userId":"183588","sessionId":"23D455B1173A13EACF299C45D4C0468A","startDate":"20260331","endDate":"20260403"}
+登录返回摘要: 无
+打卡课程摘要: 共6门: 20260331 航空航天概论B(ID:2385037)；20260331 机器学习(ID:2385587)；20260401 操作系统(ID:2386099)；20260402 面向对象设计与构造(ID:2386795)；20260402 军事理论(ID:2445436)；20260403 马克思主义基本原理(ID:2387925)
+------------------------------------------------------------------------
+时间: 2026-03-31 13:40:30
+客户端IP: 2408:8409:1920:1b69:3c65:8d07:6aff:cdd7
+请求方法: POST
+请求路径: /api/sign/range
+响应状态码: 200
+处理耗时: 7116.09 ms
+学生学号: 24371403
+学生姓名: 贺严
+平台用户ID: 183580
+IP归属地: China Beijing Beijing | China Unicom Beijing Province Network
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 12; HarmonyOS; HBN-AL10; HMSCore 6.15.4.342) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 HuaweiBrowser/17.0.3.301 Mobile Safari/537.36
+请求参数摘要: JSON参数: {"userId":"183580","sessionId":"32347BD5352554C2CF299C45D4C0468A","startDate":"20260331","endDate":"20260405"}
+登录返回摘要: 无
+打卡课程摘要: 共9门: 20260331 航空航天概论B(ID:2385206)；20260331 机器学习(ID:2385587)；20260331 计量经济学(ID:2445421)；20260401 操作系统(ID:2386106)；20260402 面向对象设计与构造(ID:2386794)；20260402 宏观经济学(ID:2445432)；20260402 金融工程概论(ID:2448512)；20260402 军事理论(ID:2445436)；20260403 马克思主义基本原理(ID:2387929)
+------------------------------------------------------------------------
+时间: 2026-03-31 15:51:45
+客户端IP: 36.112.120.56
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.15 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Networks Inter exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 12; HBN-AL10 Build/HUAWEIHBN-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/5026 REV/b86ea80a91ea3dbf4db14af2b60a8db9b3d65412 MicroMessenger/8.0.69.3040(0x2800455D) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:51:46
+客户端IP: 36.112.120.56
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.42 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Networks Inter exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 12; HBN-AL10 Build/HUAWEIHBN-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/5026 REV/b86ea80a91ea3dbf4db14af2b60a8db9b3d65412 MicroMessenger/8.0.69.3040(0x2800455D) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:53:16
+客户端IP: 240e:404:1a20:7f1d:188a:50ff:fe3c:ae27
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.14 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | No. 1,jin rong Street
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; ALI-AN00 Build/HONORALI-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/9892 REV/b86ea80a91ea3dbf4db14af2b60a8db9b3d65412 MicroMessenger/8.0.69.3040(0x2800455D) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:53:19
+客户端IP: 240e:404:1a20:7f1d:188a:50ff:fe3c:ae27
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.21 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | No. 1,jin rong Street
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; ALI-AN00 Build/HONORALI-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/9892 REV/b86ea80a91ea3dbf4db14af2b60a8db9b3d65412 MicroMessenger/8.0.69.3040(0x2800455D) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:53:23
+客户端IP: 240e:404:1a20:7f1d:188a:50ff:fe3c:ae27
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 151.06 ms
+学生学号: 24371408
+学生姓名: 曾骋
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | No. 1,jin rong Street
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 15; ALI-AN00 Build/HONORALI-AN00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/9892 REV/b86ea80a91ea3dbf4db14af2b60a8db9b3d65412 MicroMessenger/8.0.69.3040(0x2800455D) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64
+请求参数摘要: JSON参数: {"studentId":"24371408"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:183585，会话ID:CA5A36...468A，学号:24371408，账号:24371408，姓名:曾骋，昵称:曾骋，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学院:计算机学院，学院ID:434，班级:247124，班级ID:59171，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:55:30
+客户端IP: 2001:250:206:906:3509:8650:df73:ec27
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.13 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPad; CPU OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:55:46
+客户端IP: 2001:250:206:906:3509:8650:df73:ec27
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.28 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPad; CPU OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:55:57
+客户端IP: 2001:250:206:906:3509:8650:df73:ec27
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 117.87 ms
+学生学号: ZC061018
+学生姓名: 包芮源
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPad; CPU OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"studentId":"ZC061018"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:213322，会话ID:08AB59...468A，学号:ZC061018，账号:ZC061018，姓名:包芮源，昵称:包芮源，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:55:58
+客户端IP: 36.112.120.56
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.13 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Beijing | China Networks Inter exchange
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (Linux; Android 12; HBN-AL10 Build/HUAWEIHBN-AL10; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/142.0.7444.173 Mobile Safari/537.36 XWEB/1420283 MMWEBSDK/20260201 MMWEBID/5026 REV/b86ea80a91ea3dbf4db14af2b60a8db9b3d65412 MicroMessenger/8.0.69.3040(0x2800455D) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:57:43
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.12 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:57:46
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.39 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:57:55
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 198.15 ms
+学生学号: ZC061018
+学生姓名: 包芮源
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"studentId":"ZC061018"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:213322，会话ID:08AB59...468A，学号:ZC061018，账号:ZC061018，姓名:包芮源，昵称:包芮源，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:58:04
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 168.22 ms
+学生学号: ZC061018
+学生姓名: 包芮源
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"studentId":"ZC061018"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:213322，会话ID:08AB59...468A，学号:ZC061018，账号:ZC061018，姓名:包芮源，昵称:包芮源，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:58:28
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 135.76 ms
+学生学号: ZC061018
+学生姓名: 包芮源
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"studentId":"ZC061018"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:213322，会话ID:08AB59...468A，学号:ZC061018，账号:ZC061018，姓名:包芮源，昵称:包芮源，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:58:47
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: GET
+请求路径: /api/schedule
+响应状态码: 200
+处理耗时: 241.55 ms
+学生学号: ZC061018
+学生姓名: 包芮源
+平台用户ID: 213322
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: Query参数: {"userId":"213322","sessionId":"08AB59AC9E74CC4CCF299C45D4C0468A","dateStr":"20260331"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 15:58:51
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: POST
+请求路径: /api/sign/single-day
+响应状态码: 200
+处理耗时: 2588.01 ms
+学生学号: ZC061018
+学生姓名: 包芮源
+平台用户ID: 213322
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"userId":"213322","sessionId":"08AB59AC9E74CC4CCF299C45D4C0468A","dateStr":"20260331","mode":"all","selectedCourseIds":["2385587","2445421"]}
+登录返回摘要: 无
+打卡课程摘要: 共2门: 20260331 机器学习(ID:2385587)；20260331 计量经济学(ID:2445421)
+------------------------------------------------------------------------
+时间: 2026-03-31 15:59:08
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: POST
+请求路径: /api/sign/range
+响应状态码: 200
+处理耗时: 6298.16 ms
+学生学号: ZC061018
+学生姓名: 包芮源
+平台用户ID: 213322
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"userId":"213322","sessionId":"08AB59AC9E74CC4CCF299C45D4C0468A","startDate":"20260331","endDate":"20260405"}
+登录返回摘要: 无
+打卡课程摘要: 共8门: 20260331 机器学习(ID:2385587)；20260331 计量经济学(ID:2445421)；20260401 操作系统(ID:2386106)；20260402 面向对象设计与构造(ID:2386795)；20260402 宏观经济学(ID:2445432)；20260402 金融工程概论(ID:2448512)；20260403 马克思主义基本原理(ID:2387929)；20260403 金融科技学(ID:2388409)
+------------------------------------------------------------------------
+时间: 2026-03-31 16:00:09
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: GET
+请求路径: /api/invite/status
+响应状态码: 200
+处理耗时: 0.21 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: 无
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 16:00:13
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: POST
+请求路径: /api/invite/verify
+响应状态码: 200
+处理耗时: 0.20 ms
+学生学号: 未知
+学生姓名: 未知
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"inviteCode":"zhll334"}
+登录返回摘要: 无
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 16:00:21
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: POST
+请求路径: /api/login
+响应状态码: 200
+处理耗时: 138.49 ms
+学生学号: ZC061018
+学生姓名: 包芮源
+平台用户ID: 未知
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"studentId":"ZC061018"}
+登录返回摘要: 登录状态:0 | 账户信息[用户ID:213322，会话ID:08AB59...468A，学号:ZC061018，账号:ZC061018，姓名:包芮源，昵称:包芮源，性别:1，用户级别:1] | 组织信息[角色:学生，角色编码:xs，学校编码:E749024D34B74C94912469A1F1585376] | 能力信息[下载类型:npdf，播放器类型:2，日历类型:0，视频下载类型:1，智能运维地址:http://10.111.6.238:6018/，大数据地址:http://10.111.7.193:8083/]
+打卡课程摘要: 无
+------------------------------------------------------------------------
+时间: 2026-03-31 16:01:05
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: POST
+请求路径: /api/sign/range
+响应状态码: 200
+处理耗时: 26876.98 ms
+学生学号: ZC061018
+学生姓名: 包芮源
+平台用户ID: 213322
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"userId":"213322","sessionId":"08AB59AC9E74CC4CCF299C45D4C0468A","startDate":"20260302","endDate":"20260331"}
+登录返回摘要: 无
+打卡课程摘要: 共38门: 20260302 操作系统(ID:2365393)；20260302 法国文化与艺术(ID:2365594)；20260303 机器学习(ID:2366448)；20260304 操作系统(ID:2366835)；20260305 面向对象设计与构造(ID:2367360)；20260306 马克思主义基本原理(ID:2368241)；20260306 金融科技学(ID:2368618)；20260309 操作系统(ID:2369403)；20260309 法国文化与艺术(ID:2369644)；20260310 机器学习(ID:2440308)；20260311 操作系统(ID:2371119)；20260312 面向对象设计与构造(ID:2371752)；20260313 马克思主义基本原理(ID:2372800)；20260313 金融科技学(ID:2373259)；20260313 面向对象设计与构造(ID:2373444)；20260316 操作系统(ID:2374234)；20260316 法国文化与艺术(ID:2374485)；20260317 机器学习(ID:2440411)；20260318 操作系统(ID:2376045)；20260319 面向对象设计与构造(ID:2376656)；20260319 宏观经济学(ID:2445362)；20260319 金融工程概论(ID:2445364)；20260320 马克思主义基本原理(ID:2377763)；20260320 金融科技学(ID:2378241)；20260323 操作系统(ID:2379245)；20260323 法国文化与艺术(ID:2379496)；20260324 机器学习(ID:2440499)；20260324 计量经济学(ID:2445383)；20260325 操作系统(ID:2381083)；20260326 面向对象设计与构造(ID:2381723)；20260326 宏观经济学(ID:2445398)；20260326 金融工程概论(ID:2445400)；20260327 马克思主义基本原理(ID:2382843)；20260327 金融科技学(ID:2383319)；20260327 面向对象设计与构造(ID:2383529)；20260330 法国文化与艺术(ID:2384529)；20260331 机器学习(ID:2385587)；20260331 计量经济学(ID:2445421)
+------------------------------------------------------------------------
+时间: 2026-03-31 16:01:41
+客户端IP: 2001:250:206:835a:8d40:4920:85ff:740a
+请求方法: POST
+请求路径: /api/sign/range
+响应状态码: 200
+处理耗时: 28939.12 ms
+学生学号: ZC061018
+学生姓名: 包芮源
+平台用户ID: 213322
+IP归属地: China Beijing Haidian | China Education And Research Network Center
+IP归属查询状态: success
+IP归属查询失败原因: 无
+设备信息: Mozilla/5.0 (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.70(0x18004629) NetType/WIFI Language/zh_CN
+请求参数摘要: JSON参数: {"userId":"213322","sessionId":"08AB59AC9E74CC4CCF299C45D4C0468A","startDate":"20260302","endDate":"20260331"}
+登录返回摘要: 无
+打卡课程摘要: 共38门: 20260302 操作系统(ID:2365393)；20260302 法国文化与艺术(ID:2365594)；20260303 机器学习(ID:2366448)；20260304 操作系统(ID:2366835)；20260305 面向对象设计与构造(ID:2367360)；20260306 马克思主义基本原理(ID:2368241)；20260306 金融科技学(ID:2368618)；20260309 操作系统(ID:2369403)；20260309 法国文化与艺术(ID:2369644)；20260310 机器学习(ID:2440308)；20260311 操作系统(ID:2371119)；20260312 面向对象设计与构造(ID:2371752)；20260313 马克思主义基本原理(ID:2372800)；20260313 金融科技学(ID:2373259)；20260313 面向对象设计与构造(ID:2373444)；20260316 操作系统(ID:2374234)；20260316 法国文化与艺术(ID:2374485)；20260317 机器学习(ID:2440411)；20260318 操作系统(ID:2376045)；20260319 面向对象设计与构造(ID:2376656)；20260319 宏观经济学(ID:2445362)；20260319 金融工程概论(ID:2445364)；20260320 马克思主义基本原理(ID:2377763)；20260320 金融科技学(ID:2378241)；20260323 操作系统(ID:2379245)；20260323 法国文化与艺术(ID:2379496)；20260324 机器学习(ID:2440499)；20260324 计量经济学(ID:2445383)；20260325 操作系统(ID:2381083)；20260326 面向对象设计与构造(ID:2381723)；20260326 宏观经济学(ID:2445398)；20260326 金融工程概论(ID:2445400)；20260327 马克思主义基本原理(ID:2382843)；20260327 金融科技学(ID:2383319)；20260327 面向对象设计与构造(ID:2383529)；20260330 法国文化与艺术(ID:2384529)；20260331 机器学习(ID:2385587)；20260331 计量经济学(ID:2445421)
+------------------------------------------------------------------------

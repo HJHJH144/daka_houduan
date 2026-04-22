@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: daka-backend
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: FRONTEND_ORIGIN
+        sync: false
+      - key: FLASK_DEBUG
+        value: "false"
