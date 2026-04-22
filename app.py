@@ -9,6 +9,7 @@ import threading
 import time
 from typing import Any, Dict, List, Tuple
 from logging.handlers import RotatingFileHandler
+from urllib.parse import urlsplit
 
 import requests
 from flask import Flask, g, jsonify, request
@@ -50,11 +51,28 @@ MOBILE_WECHAT_USER_AGENTS = [
 ]
 
 app = Flask(__name__)
+
+
+def _normalize_origin(origin: str) -> str:
+    text = str(origin or "").strip().rstrip("/")
+    if not text:
+        return ""
+    parsed = urlsplit(text)
+    if parsed.scheme and parsed.netloc:
+        return f"{parsed.scheme}://{parsed.netloc}".rstrip("/")
+    return text
+
+
 FRONTEND_ORIGINS = [
-    origin.strip()
-    for origin in os.getenv("FRONTEND_ORIGIN", "https://hjhjh144.github.io").split(",")
-    if origin.strip()
+    normalized
+    for normalized in (
+        _normalize_origin(origin)
+        for origin in os.getenv("FRONTEND_ORIGIN", "https://hjhjh144.github.io").split(",")
+    )
+    if normalized
 ]
+if "https://hjhjh144.github.io" not in FRONTEND_ORIGINS:
+    FRONTEND_ORIGINS.append("https://hjhjh144.github.io")
 CORS(
     app,
     resources={
@@ -836,6 +854,15 @@ def before_request_log_start() -> None:
 
 @app.after_request
 def after_request_audit(response: Any) -> Any:
+    if request.path.startswith("/api/"):
+        request_origin = _normalize_origin(request.headers.get("Origin", ""))
+        if request_origin and request_origin in FRONTEND_ORIGINS:
+            response.headers["Access-Control-Allow-Origin"] = request_origin
+            response.headers["Vary"] = "Origin"
+            response.headers["Access-Control-Allow-Headers"] = "Content-Type, X-Invite-Token"
+            response.headers["Access-Control-Allow-Methods"] = "GET, POST, OPTIONS"
+            response.headers["Access-Control-Max-Age"] = "600"
+
     if request.path.startswith("/api/") and request.method in {"GET", "POST"}:
         start = getattr(g, "request_start_time", None)
         now = datetime.datetime.now()
