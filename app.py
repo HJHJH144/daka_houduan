@@ -50,8 +50,21 @@ MOBILE_WECHAT_USER_AGENTS = [
 ]
 
 app = Flask(__name__)
-FRONTEND_ORIGIN = os.getenv("FRONTEND_ORIGIN", "https://hjhjh144.github.io")
-CORS(app, resources={r"/api/*": {"origins": [FRONTEND_ORIGIN]}})
+FRONTEND_ORIGINS = [
+    origin.strip()
+    for origin in os.getenv("FRONTEND_ORIGIN", "https://hjhjh144.github.io").split(",")
+    if origin.strip()
+]
+CORS(
+    app,
+    resources={
+        r"/api/*": {
+            "origins": FRONTEND_ORIGINS,
+            "allow_headers": ["Content-Type", "X-Invite-Token"],
+            "methods": ["GET", "POST", "OPTIONS"],
+        }
+    },
+)
 
 STUDENT_NAME_CACHE: Dict[str, str] = {}
 USER_NAME_CACHE: Dict[str, str] = {}
